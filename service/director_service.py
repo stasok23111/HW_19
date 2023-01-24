@@ -17,15 +17,15 @@ class DirectorService:
 
     def update(self, data):
         did = data.get('id')
-        directior = self.get_by_id(did)
+        director = self.get_by_id(did)
 
         director.name = data.get('name')
 
-        return self.dao.update(directior)
+        return self.dao.update(director)
 
     def delete(self, did):
-        directir = self.get_by_id(did)
-        self.dao.delete(directir)
+        director = self.get_by_id(did)
+        self.dao.delete(director)
 
     def add_director(self, data):
         new_director = self.dao.create(data)
