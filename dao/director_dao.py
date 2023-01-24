@@ -20,7 +20,7 @@ class DirectorDao:
         return new_director
 
     def update(self, director):
-        self.session.add(directir)
+        self.session.add(director)
         self.session.commit()
 
     def delete(self,director):
