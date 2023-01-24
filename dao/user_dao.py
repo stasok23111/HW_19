@@ -33,4 +33,5 @@ class UserDAO:
         user = self.get_user_by_id(uid)
 
         self.session.delete(user)
-        self.session.commit
+        self.session.commit()
+        
