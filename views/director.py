@@ -30,7 +30,7 @@ class DirectorView(Resource):
     def put(self, did):
         data= request.json
 
-        data['id'] = mid
+        data['id'] = did
 
         director_service.update(data)
 
